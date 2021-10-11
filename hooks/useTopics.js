@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-const useTopics = () => {
+const useTopics = (id) => {
     const [allTopics, setAllTopics] = useState([]);
 
     useEffect(() => {
         const fetchTopics = async () => {
-            const rsp = await fetch("http://localhost:5000/topics");
+            const rsp = await fetch(`http://localhost:5000/topicsbycommunity/${id}`);
             const topics = await rsp.json();
             setAllTopics(topics);
         };

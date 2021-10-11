@@ -1,7 +1,9 @@
 import Image from 'next/image';
+import useTopics from '../hooks/useTopics';
 import styles from './community.module.css';
 
 export default function Community({ commData }) {
+    const topics = useTopics(commData.communityID);
     return (
         <div className="container-fluid my-4">
             <div className="row">
@@ -28,6 +30,10 @@ export default function Community({ commData }) {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="row">
+                <h5>Fórum:</h5>
+                {topics.map((topic) => <h6 key={topic.topicID}>{topic.topicName}</h6>)}
             </div>
         </div>
     )
