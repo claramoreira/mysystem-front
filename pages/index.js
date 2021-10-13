@@ -1,23 +1,22 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Layout from "../components/Layout";
 
 const App = () => {
     return (
         <div>
-            <Header />
-            <h1>Hello</h1>
-            <h1>Hello</h1>
-            <h1>Hello</h1>
-            <h1>Hello</h1>
-            <h1>Hello</h1>
-            <h1>Hello</h1>
-            <h1>Hello</h1>
-            <h1>Hello</h1>
-            <h1>Hello</h1>
-            <h1>Hello</h1>
-            <h1>Hello</h1><h1>Hello</h1><h1>Hello</h1><h1>Hello</h1><h1>Hello</h1>
-            <h1>Hello</h1>
-            <Footer />
+            <Layout>
+                <h1>Hello</h1>
+                <h1>Hello</h1>
+                <h1>Hello</h1>
+                <h1>Hello</h1>
+                <h1>Hello</h1>
+                <h1>Hello</h1>
+                <h1>Hello</h1>
+                <h1>Hello</h1>
+                <h1>Hello</h1>
+                <h1>Hello</h1>
+                <h1>Hello</h1><h1>Hello</h1><h1>Hello</h1><h1>Hello</h1><h1>Hello</h1>
+                <h1>Hello</h1>
+            </Layout>
         </div>
     )
 }

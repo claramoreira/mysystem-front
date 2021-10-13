@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import useTopics from '../hooks/useTopics';
-import styles from './community.module.css';
+import styles from './community.module.scss';
 
 export default function Community({ commData }) {
     const topics = useTopics(commData.communityID);
